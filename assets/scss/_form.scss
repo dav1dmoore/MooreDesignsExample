@@ -1,0 +1,59 @@
+form {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    flex-direction: column;
+      font-family: 'RalewayLight';
+
+    label {
+      color: $quad;
+      padding: 5px;
+      margin: 2px 0 2px 0;
+
+      @include bp(tablet){
+      padding: 7px;
+    }
+  }
+
+  input,
+  textarea {
+    margin: 5px;
+    padding: 4px;
+
+    @include bp(desktop){
+      font-size: large;
+    }
+  }
+}
+}
+.connectBtn {
+  font-family: 'RalewayLight';
+  width: 98%;
+  margin:5px;
+  align-self: center;
+  padding: 5px;
+  font-size: initial;
+
+  @include bp(desktop){
+    font-size: x-large;
+  }
+}
+
+.connectBtn:hover {
+  font-weight: bold;
+}
+
+.connectionForm {
+
+  h2 {
+  text-align: center;
+  }
+  p {
+    color: $quad;
+    padding: 3px;
+    margin: 0px;
+  }
+}

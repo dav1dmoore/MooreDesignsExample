@@ -1,0 +1,32 @@
+
+
+nav a {
+  text-decoration: none;
+  color: $primary;
+  font-weight: 800;
+  text-shadow: 0.5px 0.5px 4px white;
+}
+
+nav a:hover {
+  color:white;
+  font-weight: 800;
+  text-shadow: 0.5px 0.5px 10px $primary;
+}
+
+
+.footer nav {
+  ul {
+    padding: 0;
+
+    li {
+      justify-content: center;
+    }
+  }
+}
+
+// Selected Navigation
+#selected {
+  color:$quad;
+  font-weight: 800;
+  text-shadow: 0.5px 0.5px 10px $primary;
+}

@@ -1,0 +1,49 @@
+// Modal Navigation Styling
+
+.modalNav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background: $tertiary;
+  font-size: xx-large;
+
+  .hamburgerClose {
+    margin: 1rem;
+  }
+
+  ul {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+
+    li {
+      padding: 9px;
+    }
+  }
+
+  a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    text-shadow: 0.5px 0.5px 4px $primary;
+  }
+
+  a:hover {
+    color: $primary;
+    font-weight: 900;
+    text-shadow: 0.5px 0.5px 10px white;
+  }
+}
+
+#modalSelected {
+  color: $secondary;
+  font-weight: 900;
+  text-shadow: 0.5px 0.5px 10px white;
+}

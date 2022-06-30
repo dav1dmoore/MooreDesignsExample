@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Moore Development & Design</title>
+  <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="connection">
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"><img src="assets/images/logoTest1.png" alt="Moore Development & Design Nav Logo" \></a>
+      </div>
+      <nav>
+        <a href="#" class="hamburgerOpen">☰</a>
+        <ul>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="connection.html">Connection</a></li>
+          <li><a href="mission.html">Mission</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero"><a href="index.html"><img class="busLogo" src="assets/images/heroDesk.jpg" alt="Moore Design & Development Main Logo " \></a></div>
+    <section class="connectionForm">
+      <h2>Connect With Us!</h2>
+      <p>Please complete the form below to share with us your information and services desired. Based on the information provided
+        we will contact you to schedule a consultation.</p>
+      <hr>
+      <form onsubmit="submitForm(event)" id="user-form" oninvalid="() => true">
+        <div>
+          <label for="first-name">First Name:</label>
+          <input type="text" placeholder="Enter first name" id="first-name">
+          <p id="first-name-err"></p>
+        </div>
+        <div>
+          <label for="last-name">Last Name:</label>
+          <input type="text" placeholder="Enter last name" id="last-name">
+          <p id="last-name-err"></p>
+        </div>
+        <div>
+          <label for="email">Email address:</label>
+          <input type="input" placeholder="Enter email" id="email">
+          <p id="email-err"></p>
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" placeholder="Enter Contact Phone Number.">
+          <p id="phone-err"></p>
+        </div>
+        <div>
+          <label for="site">Company Website:</label>
+          <input type="input" placeholder="Enter Company Website" id="site">
+          <p id="site-err"></p>
+        </div>
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" value="2022-03-01" id="date">
+          <p id="date-err"></p>
+        </div>
+        <div>
+          <label for="request">Description of Services Desired:</label>
+          <!-- <input type="text"  placeholder="Describe the services you are interest in." id="first-name"> -->
+          <textarea type="text" name="description" placeholder="Please describe the services you are interested in." rows="10" cols="34"></textarea>
+          <p id="first-name-err"></p>
+        </div>
+        <button type="submit" class="connectBtn"><a href="mailto:david_e_moore@hotmail.com">Connect Now!</a></button></a> 
+      </form>
+    </section>
+
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="connection.html">Connection</a></li>
+          <li><a href="mission.html">Mission</a></li>
+        </ul>
+      </nav>
+      <address>
+        <p>Moore Development & Designs</p>
+        <p>2627 E. Columbia</p>
+        <p>Spokane, WA 99208</p>
+        <telephone>509-999-1234</telephone>
+      </address>
+      <div>
+        <a href="https://www.facebook.com/"><img src="assets/images/iconFb.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img src="assets/images/icon-instagram.png" alt=""></a>
+        <a href="https://www.pinterest.com"><img src="assets/images/iconPinterest.png" alt=""></a>
+        <a href="http://www.twitter.com"><img src="assets/images/iconTwitter.png" alt=""></a>  
+      </div>
+    </footer>
+  </div>
+
+  <div class="modalNav">
+    <a href="#" class="hamburgerClose">☰</a>
+    <ul>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="connection.html">Connection</a></li>
+      <li><a href="mission.html">Mission</a></li>
+    </ul>
+  </div>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

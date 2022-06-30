@@ -1,0 +1,829 @@
+/* Webfont: OpenSans-Regular */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Raleway-Light */
+@font-face {
+  font-family: 'RalewayLight';
+  src: url("../fonts/Raleway-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Light.woff") format("woff"), url("../fonts/Raleway-Light.ttf") format("truetype"), url("../fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 1, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+form {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 6, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+form div {
+  display: flex;
+  flex-direction: column;
+  font-family: 'RalewayLight';
+}
+
+/* line 11, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+form div label {
+  color: #e6e6e6;
+  padding: 5px;
+  margin: 2px 0 2px 0;
+}
+
+@media (min-width: 450px) {
+  /* line 11, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+  form div label {
+    padding: 7px;
+  }
+}
+
+/* line 21, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+form div input,
+form div textarea {
+  margin: 5px;
+  padding: 4px;
+}
+
+@media (min-width: 900px) {
+  /* line 21, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+  form div input,
+  form div textarea {
+    font-size: large;
+  }
+}
+
+/* line 32, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+.connectBtn {
+  font-family: 'RalewayLight';
+  width: 98%;
+  margin: 5px;
+  align-self: center;
+  padding: 5px;
+  font-size: initial;
+}
+
+.connectBtn > a {
+text-decoration: none;
+color: inherit;
+}
+
+@media (min-width: 900px) {
+  /* line 32, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+  .connectBtn {
+    font-size: x-large;
+  }
+}
+
+/* line 45, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+.connectBtn:hover {
+  font-weight: bold;
+}
+
+/* line 51, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+.connectionForm h2 {
+  text-align: center;
+}
+
+/* line 54, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_form.scss */
+.connectionForm p {
+  color: #e6e6e6;
+  padding: 3px;
+  margin: 0px;
+}
+
+/* line 1, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+html {
+  box-sizing: border-box;
+  color: black;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+/* line 7, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+body {
+  background: radial-gradient(ellipse at center, black, white);
+  margin: 3px;
+  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media (min-width: 450px) {
+  /* line 7, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  body {
+    margin: 25px;
+  }
+}
+
+@media (min-width: 900px) {
+  /* line 7, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  body {
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+/* line 19, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.container {
+  border: 1px solid #8c8c8c;
+  box-shadow: 0 0 10px #666;
+}
+
+@media (min-width: 900px) {
+  /* line 19, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  .container {
+    margin: 25px 50px;
+  }
+}
+
+/* line 27, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.item {
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #4d4d4d;
+  color: #e6e6e6;
+}
+
+/* line 35, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+section {
+  background-color: #8c8c8c;
+  border-radius: 3px;
+}
+
+/* line 36, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+section h2 {
+  background-color: #e6e6e6;
+  border-radius: 3px;
+}
+
+/* line 40, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+section p {
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 49, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+li {
+  list-style: none;
+}
+
+/* line 53, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: #8c8c8c;
+  font-family: 'OpenSans';
+  font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media (min-width: 450px) {
+  /* line 53, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 8px;
+    font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+@media (min-width: 900px) {
+  /* line 53, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 15px;
+  }
+}
+
+/* line 75, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+p,
+ul,
+.tbl {
+  font-family: 'RalewayLight';
+}
+
+/* line 82, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+header .logo {
+  justify-content: start;
+  margin: 0;
+  padding: 15px 0 15px 15px;
+}
+
+@media (min-width: 450px) {
+  /* line 82, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  header .logo {
+    padding: 0;
+  }
+}
+
+/* line 90, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+header .logo img {
+  width: 100%;
+}
+
+@media (min-width: 450px) {
+  /* line 90, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  header .logo img {
+    display: none;
+  }
+}
+
+/* line 98, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+header nav {
+  justify-content: center;
+  align-content: center;
+}
+
+@media (min-width: 450px) {
+  /* line 98, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  header nav {
+    justify-content: unset;
+    align-content: unset;
+  }
+}
+
+/* line 106, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+header nav .hamburgerOpen {
+  margin: 3px;
+  font-size: xx-large;
+}
+
+@media (min-width: 450px) {
+  /* line 106, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  header nav .hamburgerOpen {
+    display: none;
+  }
+}
+
+/* line 114, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+header nav ul {
+  display: none;
+}
+
+@media (min-width: 450px) {
+  /* line 114, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  header nav ul {
+    padding: 7px;
+    margin: 5px;
+    justify-self: end;
+  }
+}
+
+@media (min-width: 900px) {
+  /* line 114, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  header nav ul {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 450px) {
+  /* line 126, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  header nav ul li {
+    justify-self: center;
+  }
+}
+
+/* line 135, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.hero {
+  display: none;
+}
+
+@media (min-width: 450px) {
+  /* line 138, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  .hero img {
+    width: 100%;
+  }
+}
+
+/* line 145, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.services {
+  margin: 0 0 4px;
+}
+
+/* line 149, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.services p {
+  color: #e6e6e6;
+}
+
+/* line 154, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.featured {
+  margin: 0 0 4px;
+}
+
+@media (min-width: 450px) {
+  /* line 154, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  .featured {
+    margin: 0 2px 0 0;
+  }
+}
+
+/* line 161, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.featured img {
+  width: 100%;
+  height: auto;
+  min-height: 170px;
+}
+
+/* line 168, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.testimonial {
+  align-items: start;
+}
+
+@media (min-width: 450px) {
+  /* line 168, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  .testimonial {
+    margin: 0 0 0 2px;
+  }
+}
+
+@media (min-width: 450px) {
+  /* line 175, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  .testimonial h2 {
+    align-items: none;
+  }
+}
+
+/* line 180, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.testimonial p {
+  color: #e6e6e6;
+}
+
+/* line 185, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+address {
+  text-align: center;
+}
+
+/* line 189, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+address p {
+  margin: 0;
+}
+
+/* line 197, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+footer {
+  border-top: solid 3px #e6e6e6;
+}
+
+/* line 200, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+footer div {
+  text-align: center;
+  margin: 12px 0 0;
+}
+
+@media (min-width: 900px) {
+  /* line 204, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  footer div img {
+    width: 2%;
+  }
+}
+
+/* line 210, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+footer div img:hover {
+  width: 4%;
+  box-shadow: 0 0 3 3 white;
+}
+
+@media (min-width: 900px) {
+  /* line 210, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+  footer div img:hover {
+    width: 3%;
+  }
+}
+
+/* line 224, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+hr {
+  width: 100%;
+}
+
+/* line 229, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_layout.scss */
+.slide-buttons {
+  margin-bottom: 10px;
+}
+
+/* line 3, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-rows: auto;
+  grid-template-areas: "header header" "services services" "featured featured" "testimonial testimonial" "footer footer";
+}
+
+@media (min-width: 450px) {
+  /* line 3, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  .container {
+    grid-template-areas: "header header" "hero hero" "services services" "featured testimonial" "footer footer";
+  }
+}
+
+/* line 13, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.item {
+  display: grid;
+}
+
+/* line 19, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+header {
+  display: grid;
+  grid-area: header;
+  grid-template-columns: 1fr 50px;
+  grid-template-areas: "logo nav";
+}
+
+@media (min-width: 450px) {
+  /* line 19, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  header {
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav";
+  }
+}
+
+/* line 29, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+header .logo {
+  display: grid;
+  grid-area: logo;
+}
+
+@media (min-width: 450px) {
+  /* line 29, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  header .logo {
+    grid-area: none;
+  }
+}
+
+/* line 37, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+header nav {
+  display: grid;
+  grid-area: nav;
+}
+
+@media (min-width: 450px) {
+  /* line 37, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  header nav {
+    display: grid;
+    grid-area: nav;
+  }
+}
+
+@media (min-width: 450px) {
+  /* line 45, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  header nav ul {
+    display: grid;
+    grid-template-columns: 80px 100px 80px;
+  }
+}
+
+@media (min-width: 900px) {
+  /* line 45, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  header nav ul {
+    grid-template-columns: 120px 140px 120px;
+  }
+}
+
+@media (min-width: 450px) {
+  /* line 53, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  header nav ul li {
+    display: grid;
+  }
+}
+
+/* line 63, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.hero {
+  grid-area: hero;
+}
+
+@media (min-width: 450px) {
+  /* line 63, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  .hero {
+    display: grid;
+  }
+}
+
+/* line 70, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.services {
+  display: grid;
+  grid-area: services;
+  grid-template-areas: "header" "list";
+}
+
+/* line 75, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.services h2 {
+  display: grid;
+  grid-area: header;
+}
+
+/* line 80, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.services ul {
+  display: grid;
+  grid-area: list;
+}
+
+/* line 86, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.featured {
+  display: grid;
+  grid-area: featured;
+  grid-template-areas: "header" "image";
+}
+
+/* line 91, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.featured h2 {
+  display: grid;
+  grid-area: header;
+}
+
+/* line 96, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.featured img {
+  display: grid;
+  grid-area: image;
+}
+
+/* line 102, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.testimonial {
+  display: grid;
+  grid-area: testimonial;
+  grid-template-areas: "header" "testimonial";
+}
+
+/* line 107, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.testimonial h2 {
+  display: grid;
+  grid-area: header;
+}
+
+/* line 112, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.testimonial p {
+  display: grid;
+  grid-area: testimonial;
+}
+
+/* line 119, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-areas: "nav" "address" "social";
+}
+
+/* line 124, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.footer nav {
+  display: grid;
+  grid-area: nav;
+}
+
+/* line 128, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.footer nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+/* line 132, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.footer nav ul li {
+  display: grid;
+}
+
+/* line 140, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.connection .container {
+  grid-template-areas: "header header" "connectionForm connectionForm" "footer footer";
+}
+
+@media (min-width: 450px) {
+  /* line 140, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  .connection .container {
+    grid-template-areas: "header header" "hero hero" "connectionForm connectionForm" "footer footer";
+  }
+}
+
+/* line 147, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.connection .connectionForm {
+  display: grid;
+  grid-area: connectionForm;
+}
+
+/* line 153, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.collection .container {
+  grid-template-areas: "header header" "portfolio portfolio" "footer footer";
+}
+
+@media (min-width: 450px) {
+  /* line 153, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+  .collection .container {
+    grid-template-areas: "header header" "hero hero" "portfolio portfolio" "footer footer";
+  }
+}
+
+/* line 160, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_grid.scss */
+.collection .portfolio {
+  display: grid;
+  grid-area: portfolio;
+}
+
+/* line 3, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_navigation.scss */
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  text-shadow: 0.5px 0.5px 4px white;
+}
+
+/* line 10, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_navigation.scss */
+nav a:hover {
+  color: white;
+  font-weight: 800;
+  text-shadow: 0.5px 0.5px 10px black;
+}
+
+/* line 18, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_navigation.scss */
+.footer nav ul {
+  padding: 0;
+}
+
+/* line 21, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_navigation.scss */
+.footer nav ul li {
+  justify-content: center;
+}
+
+/* line 28, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_navigation.scss */
+#selected {
+  color: #e6e6e6;
+  font-weight: 800;
+  text-shadow: 0.5px 0.5px 10px black;
+}
+
+/* line 2, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+.slider-viewer {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+@media (min-width: 450px) {
+  /* line 2, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+  .slider-viewer {
+    height: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  /* line 2, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+  .slider-viewer {
+    height: 900px;
+  }
+}
+
+/* line 14, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+.slide-group {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 20, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
+
+/* line 26, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+.slide img {
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 450px) {
+  /* line 26, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+  .slide img {
+    height: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  /* line 26, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+  .slide img {
+    height: 900px;
+  }
+}
+
+/* line 39, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+.slide:first-child {
+  display: block;
+}
+
+/* line 43, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+.slide-buttons {
+  text-align: center;
+}
+
+/* line 46, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+.slide-buttons button {
+  border-radius: 10px;
+  padding: 3px;
+  background: black;
+  border: solid 1px black;
+  box-shadow: 0 0 5px 1px #4d4d4d;
+  margin: 5px;
+}
+
+@media (min-width: 900px) {
+  /* line 46, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+  .slide-buttons button {
+    padding: 6px;
+  }
+}
+
+/* line 60, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_slider.scss */
+.active {
+  background: #4d4d4d !important;
+  border: solid 1px #4d4d4d !important;
+  box-shadow: 0 0 5px black !important;
+}
+
+/* line 3, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_modal.scss */
+.modalNav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background: #8c8c8c;
+  font-size: xx-large;
+}
+
+/* line 16, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_modal.scss */
+.modalNav .hamburgerClose {
+  margin: 1rem;
+}
+
+/* line 20, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_modal.scss */
+.modalNav ul {
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+/* line 25, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_modal.scss */
+.modalNav ul li {
+  padding: 9px;
+}
+
+/* line 30, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_modal.scss */
+.modalNav a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  text-shadow: 0.5px 0.5px 4px black;
+}
+
+/* line 38, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_modal.scss */
+.modalNav a:hover {
+  color: black;
+  font-weight: 900;
+  text-shadow: 0.5px 0.5px 10px white;
+}
+
+/* line 45, ../../Users/319171/Desktop/EMRK-287/Assignments/mdd/assets/scss/_modal.scss */
+#modalSelected {
+  color: #4d4d4d;
+  font-weight: 900;
+  text-shadow: 0.5px 0.5px 10px white;
+}
+
+h1 {
+  background-color: #e6e6e6;
+  border-radius: 3px;
+}
+
+.tbl {
+  color: #e6e6e6;
+}
+
+.tbl td {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,163 @@
+// Overall Page Container Grid
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-rows: auto;
+  grid-template-areas: "header header" "services services" "featured featured" "testimonial testimonial" "footer footer";
+  @include bp('tablet') {
+    grid-template-areas: "header header" "hero hero" "services services" "featured testimonial" "footer footer";
+  }
+}
+
+.item {
+  display: grid;
+}
+
+//Navigation Grid
+
+header {
+  display: grid;
+  grid-area: header;
+  grid-template-columns: 1fr 50px;
+  grid-template-areas: "logo nav";
+  @include bp(tablet) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav";
+  }
+
+  .logo {
+    display: grid;
+    grid-area: logo;
+    @include bp(tablet){
+      grid-area: none;
+    }
+  }
+
+  nav {
+    display: grid;
+    grid-area: nav;
+    @include bp(tablet) {
+      display: grid;
+      grid-area: nav;
+    }
+
+    ul {
+      @include bp(tablet){
+        display: grid;
+        grid-template-columns: 80px 100px 80px;
+      }
+      @include bp(desktop){
+        grid-template-columns: 120px 140px 120px;
+      }
+      li {
+        @include bp(tablet) {
+          display: grid;
+        }
+      }
+    }
+  }
+}
+//Page Contents grid
+
+.hero {
+  grid-area: hero;
+  @include bp(tablet){
+    display: grid;
+  }
+}
+
+.services {
+  display: grid;
+  grid-area: services;
+  grid-template-areas: "header" "list";
+
+  h2 {
+    display: grid;
+    grid-area: header;
+  }
+
+  ul {
+    display: grid;
+    grid-area: list;
+  }
+}
+
+.featured {
+  display: grid;
+  grid-area: featured;
+  grid-template-areas: "header" "image";
+
+  h2 {
+    display: grid;
+    grid-area: header;
+  }
+
+  img {
+    display: grid;
+    grid-area: image;
+  }
+}
+
+.testimonial {
+  display: grid;
+  grid-area: testimonial;
+  grid-template-areas: "header" "testimonial";
+
+  h2 {
+    display: grid;
+    grid-area: header;
+  }
+
+  p {
+    display: grid;
+    grid-area: testimonial;
+  }
+}
+//Footer grid
+
+.footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-areas: "nav" "address" "social";
+
+  nav {
+    display: grid;
+    grid-area: nav;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+
+      li {
+        display: grid;
+      }
+    }
+  }
+}
+
+// Connection Page Grid
+.connection .container {
+  grid-template-areas: "header header" "connectionForm connectionForm" "footer footer";
+  @include bp('tablet') {
+    grid-template-areas: "header header" "hero hero" "connectionForm connectionForm" "footer footer";
+  }
+}
+
+.connection .connectionForm {
+  display: grid;
+  grid-area: connectionForm;
+}
+
+//Collection Page Grid
+.collection .container {
+  grid-template-areas: "header header" "portfolio portfolio" "footer footer";
+  @include bp('tablet') {
+    grid-template-areas: "header header" "hero hero" "portfolio portfolio" "footer footer";
+  }
+}
+
+.collection .portfolio {
+  display: grid;
+  grid-area: portfolio;
+}
