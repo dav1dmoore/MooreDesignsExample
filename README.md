@@ -7,4 +7,7 @@ This is an example, mockup of a fully-responsive front-end project geared to mar
 SASS is an extension language that was used to improve the organization of my CSS by nesting style elements and creating partial style files, while improving my efficiency through using style variables, functions, and mixins; it ultimately allowed me to complete my styling objectives in fewer lines of code then traditional css and creates clear, concise styling for team members/users to follow.<br>
 jQuery is a JavaScript library that simplifies and expedites the implementation of standard JavaScript. jQuery was used in the creation of the modal navigation and the feature to highlight/identify the corresponding title of the selected page, and the selection/transition of the artwork carousel.<br>
 In addition, I employed JavaScript & Regular Expressions on the form for front-end data validation, to ensure user input is correct and all fields were complete prior to database submission.<br>
+<br>
+All artwork is original and was created by the developer!
+<br><br>
 ** First build, prior to learning full-stack web development. **
