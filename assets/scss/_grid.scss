@@ -4,9 +4,10 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(100px, 1fr));
   grid-template-rows: auto;
-  grid-template-areas: "header header" "services services" "featured featured" "testimonial testimonial" "footer footer";
+  grid-template-areas: "header header""services services""featured featured""testimonial testimonial""footer footer";
+
   @include bp('tablet') {
-    grid-template-areas: "header header" "hero hero" "services services" "featured testimonial" "footer footer";
+    grid-template-areas: "header header""hero hero""services services""featured testimonial""footer footer";
   }
 }
 
@@ -21,6 +22,7 @@ header {
   grid-area: header;
   grid-template-columns: 1fr 50px;
   grid-template-areas: "logo nav";
+
   @include bp(tablet) {
     grid-template-columns: 1fr;
     grid-template-areas: "nav";
@@ -29,7 +31,8 @@ header {
   .logo {
     display: grid;
     grid-area: logo;
-    @include bp(tablet){
+
+    @include bp(tablet) {
       grid-area: none;
     }
   }
@@ -37,19 +40,22 @@ header {
   nav {
     display: grid;
     grid-area: nav;
+
     @include bp(tablet) {
       display: grid;
       grid-area: nav;
     }
 
     ul {
-      @include bp(tablet){
+      @include bp(tablet) {
         display: grid;
         grid-template-columns: 80px 100px 80px;
       }
-      @include bp(desktop){
+
+      @include bp(desktop) {
         grid-template-columns: 120px 140px 120px;
       }
+
       li {
         @include bp(tablet) {
           display: grid;
@@ -58,11 +64,13 @@ header {
     }
   }
 }
+
 //Page Contents grid
 
 .hero {
   grid-area: hero;
-  @include bp(tablet){
+
+  @include bp(tablet) {
     display: grid;
   }
 }
@@ -70,7 +78,7 @@ header {
 .services {
   display: grid;
   grid-area: services;
-  grid-template-areas: "header" "list";
+  grid-template-areas: "header""list";
 
   h2 {
     display: grid;
@@ -86,7 +94,7 @@ header {
 .featured {
   display: grid;
   grid-area: featured;
-  grid-template-areas: "header" "image";
+  grid-template-areas: "header""image";
 
   h2 {
     display: grid;
@@ -102,7 +110,7 @@ header {
 .testimonial {
   display: grid;
   grid-area: testimonial;
-  grid-template-areas: "header" "testimonial";
+  grid-template-areas: "header""testimonial";
 
   h2 {
     display: grid;
@@ -114,12 +122,13 @@ header {
     grid-area: testimonial;
   }
 }
+
 //Footer grid
 
 .footer {
   display: grid;
   grid-area: footer;
-  grid-template-areas: "nav" "address" "social";
+  grid-template-areas: "nav""address""social";
 
   nav {
     display: grid;
@@ -138,9 +147,10 @@ header {
 
 // Connection Page Grid
 .connection .container {
-  grid-template-areas: "header header" "connectionForm connectionForm" "footer footer";
+  grid-template-areas: "header header""connectionForm connectionForm""footer footer";
+
   @include bp('tablet') {
-    grid-template-areas: "header header" "hero hero" "connectionForm connectionForm" "footer footer";
+    grid-template-areas: "header header""hero hero""connectionForm connectionForm""footer footer";
   }
 }
 
@@ -151,9 +161,10 @@ header {
 
 //Collection Page Grid
 .collection .container {
-  grid-template-areas: "header header" "portfolio portfolio" "footer footer";
+  grid-template-areas: "header header""portfolio portfolio""footer footer";
+
   @include bp('tablet') {
-    grid-template-areas: "header header" "hero hero" "portfolio portfolio" "footer footer";
+    grid-template-areas: "header header""hero hero""portfolio portfolio""footer footer";
   }
 }
 

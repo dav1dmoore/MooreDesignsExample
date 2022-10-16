@@ -1,13 +1,13 @@
-$(function(){
-  $('.hamburgerOpen').on('click', function(e){
+$(function () {
+  $('.hamburgerOpen').on('click', function (e) {
     e.preventDefault();
     $('.modalNav').fadeIn(900);
     $('.modalNav').css('display', 'flex');
   });
 });
 
-$(function(){
-  $('.hamburgerClose').on('click', function(e){
+$(function () {
+  $('.hamburgerClose').on('click', function (e) {
     e.preventDefault();
     $('.modalNav').fadeOut(900);
   });
@@ -17,72 +17,80 @@ $(function(){
 //Create variables
 var $test1;
 
-$('.slider').each(function(){
+$('.slider').each(function () {
   var $this = $(this);
   var $group = $this.find('.slide-group');
   var $slides = $this.find('.slide');
   var buttonArray = [];
   var currentIndex = 0;
   var timeout;
-// Move function
+  // Move function
 
-function move(newIndex){
-  var animateLeft, slideLeft;
+  function move(newIndex) {
+    var animateLeft, slideLeft;
 
-  advance ();
-
-  if ($group.is(':animated') || currentIndex === newIndex){
-    return;
-  }
-
-  buttonArray[currentIndex].removeClass('active');
-  buttonArray[newIndex].addClass('active');
-
-  if (newIndex >  currentIndex){
-    slideLeft = '100%';
-    animateLeft = '-100%';
-  } else {
-    slideLeft = '-100%';
-    animateLeft = '100%';
-  }
-
-  $slides.eq(newIndex).css( {
-    left: slideLeft,
-    display: 'block'
-  });
-
-  $group.animate( {left: animateLeft}, function(){
-    $slides.eq(currentIndex).css( {display:'none'});
-    $slides.eq(newIndex).css({left:0});
-    $group.css({left:0});
-    currentIndex = newIndex;
-  });
-}
-
-
-function advance (){
-  clearTimeout(timeout);
-  timeout = setTimeout(function(){
-    if (currentIndex < ($slides.length - 1)){
-      move(currentIndex + 1);
-    } else {
-      move(0);
-    }
-  }, 5000);
-  $test1 = $slides[currentIndex];
-  }
-
-    $.each($slides, function(index){
-      var $button = $('<button type="button" class="slide-btn"></button>');
-      if (index === currentIndex){
-        $button.addClass('active');
-      }
-      $button.on('click', function(){
-        move(index);
-      }).appendTo('.slide-buttons');
-      buttonArray.push($button);
-    });
     advance();
+
+    if ($group.is(':animated') || currentIndex === newIndex) {
+      return;
+    }
+
+    buttonArray[currentIndex].removeClass('active');
+    buttonArray[newIndex].addClass('active');
+
+    if (newIndex > currentIndex) {
+      slideLeft = '100%';
+      animateLeft = '-100%';
+    } else {
+      slideLeft = '-100%';
+      animateLeft = '100%';
+    }
+
+    $slides.eq(newIndex).css({
+      left: slideLeft,
+      display: 'block'
+    });
+
+    $group.animate({
+      left: animateLeft
+    }, function () {
+      $slides.eq(currentIndex).css({
+        display: 'none'
+      });
+      $slides.eq(newIndex).css({
+        left: 0
+      });
+      $group.css({
+        left: 0
+      });
+      currentIndex = newIndex;
+    });
+  }
+
+
+  function advance() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function () {
+      if (currentIndex < ($slides.length - 1)) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    }, 5000);
+    $test1 = $slides[currentIndex];
+  }
+
+  $.each($slides, function (index) {
+    var $button = $('<button type="button" class="slide-btn"></button>');
+    if (index === currentIndex) {
+      $button.addClass('active');
+    }
+    $button.on('click', function () {
+      move(index);
+    }).appendTo('.slide-buttons');
+    buttonArray.push($button);
+  });
+  advance();
 });
 
 // Current Page Script
@@ -92,19 +100,19 @@ const $currentPage = $thisPage.match(/[^\/]+$/)[0];
 const $thisLink = $('nav>ul>li>a');
 const $modalLink = $('.modalNav ul a')
 
-$thisLink.each(function(){
+$thisLink.each(function () {
   $link = $(this).attr('href');
-  if ($link === $currentPage){
+  if ($link === $currentPage) {
     $(this).attr('id', 'selected');
   } else {
     return;
   }
 });
 
-$modalLink.each(function(){
+$modalLink.each(function () {
   $link = $(this).attr('href');
-  if($link === $currentPage){
-    $(this).attr('id','modalSelected');
+  if ($link === $currentPage) {
+    $(this).attr('id', 'modalSelected');
   } else {
     return;
   }
@@ -121,7 +129,7 @@ const telEl = document.querySelector("#phone");
 const siteEl = document.querySelector("#site");
 
 /*
-  returns and object that uses the element's id attribute as a key and the error
+  returns an object that uses the element's id attribute as a key and the error
   message as the value
 */
 function getFormErrors() {
@@ -145,7 +153,7 @@ function getFormErrors() {
   if (!emailVal.test(emailEl.value)) {
     errors[emailEl.id] = "Email must be properly formatted: x@x.xxx";
   }
-  if (!telVal.test(telEl.value) || telEl.value.length < 9){
+  if (!telVal.test(telEl.value) || telEl.value.length < 9) {
     errors[telEl.id] = "Telephone number must be digits only.";
   }
   if (!siteVal.test(siteEl.value)) {
@@ -160,9 +168,9 @@ function getFormErrors() {
 function clearFormErrors() {
   const errorEls = document.querySelectorAll(`[id$='err']`);
   // loop through all of the error elements and clear the text content
-  for (let i = 0; i < errorEls.length; i++){
+  for (let i = 0; i < errorEls.length; i++) {
     errorEls[i].innerText = "";
-}
+  }
 }
 
 // clear form values
@@ -170,14 +178,15 @@ function clearFormValues() {
   const inputClr = document.querySelectorAll("input");
   const textAreaClr = document.querySelector("textarea");
   // loop through all of the error elements and clear the text content
-  for (let i = 0; i < inputClr.length - 1; i++){
+  for (let i = 0; i < inputClr.length - 1; i++) {
     inputClr[i].value = "";
-}
-textAreaClr.value = "";
+  }
+  textAreaClr.value = "";
 
 }
 
 const userObj = {}
+
 function getFormValues() {
   userObj.firstName = firstNameEl.value;
   userObj.lastName = lastNameEl.value;

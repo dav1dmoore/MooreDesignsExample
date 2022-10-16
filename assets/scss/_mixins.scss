@@ -1,17 +1,21 @@
 // font mixins
 
- @mixin bp($point){
-   @if $point == tablet {
-     @media (min-width: 450px){
-       @content;
-     }
-   } @else if $point == desktop {
-     @media (min-width: 900px){
-       @content;
-     }
-   }
- }
+@mixin bp($point) {
+  @if $point==tablet {
+    @media (min-width: 450px) {
+      @content;
+    }
+  }
 
- @mixin respType($num1, $num2){
-   font-size: calc(($num1+'px') + ($num2 - $num1) * ((100vw - 300px) / (1600 - 300)));
- };
+  @else if $point==desktop {
+    @media (min-width: 900px) {
+      @content;
+    }
+  }
+}
+
+@mixin respType($num1, $num2) {
+  font-size: calc(($num1+'px') + ($num2 - $num1) * ((100vw - 300px) / (1600 - 300)));
+}
+
+;
