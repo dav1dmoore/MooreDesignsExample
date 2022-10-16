@@ -1,6 +1,6 @@
 # MooreDesignsExample
 
-** Second build, prior to learning full-stack web development. **<br>
+** Second build, prior to learning full-stack web development. **<br><br>
  This is an example, mockup of a fully-responsive front-end project to show the use of the following languages & libraries: HTML, CSS, SASS, & JavaScript/jQuery.
 
 *This is NOT an actual portfolio page.* <br>
